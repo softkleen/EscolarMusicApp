@@ -1,6 +1,6 @@
 ﻿namespace EscolarMusicApp
 {
-    partial class Form1
+    partial class FrmAluno
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -45,11 +45,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(172, 283);
+            this.button1.Location = new System.Drawing.Point(69, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -59,7 +60,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(172, 108);
+            this.txtId.Location = new System.Drawing.Point(69, 41);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(51, 20);
@@ -67,21 +68,21 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(172, 134);
+            this.txtNome.Location = new System.Drawing.Point(69, 67);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(176, 20);
             this.txtNome.TabIndex = 1;
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(172, 160);
+            this.txtCpf.Location = new System.Drawing.Point(69, 93);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(100, 20);
             this.txtCpf.TabIndex = 99;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(456, 86);
+            this.button2.Location = new System.Drawing.Point(288, 31);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(336, 23);
             this.button2.TabIndex = 100;
@@ -92,21 +93,21 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(456, 108);
+            this.listBox2.Location = new System.Drawing.Point(289, 53);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(336, 186);
             this.listBox2.TabIndex = 101;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(172, 218);
+            this.txtEmail.Location = new System.Drawing.Point(69, 151);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(200, 20);
             this.txtEmail.TabIndex = 102;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(172, 244);
+            this.txtTelefone.Location = new System.Drawing.Point(69, 177);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 20);
             this.txtTelefone.TabIndex = 103;
@@ -117,7 +118,7 @@
             this.cmbSexo.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-            this.cmbSexo.Location = new System.Drawing.Point(172, 187);
+            this.cmbSexo.Location = new System.Drawing.Point(69, 120);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(121, 21);
             this.cmbSexo.TabIndex = 104;
@@ -125,7 +126,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(148, 111);
+            this.label1.Location = new System.Drawing.Point(45, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 105;
@@ -134,7 +135,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(131, 138);
+            this.label2.Location = new System.Drawing.Point(28, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 106;
@@ -143,7 +144,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(139, 165);
+            this.label3.Location = new System.Drawing.Point(36, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 107;
@@ -152,7 +153,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(135, 192);
+            this.label4.Location = new System.Drawing.Point(32, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 108;
@@ -161,7 +162,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(134, 219);
+            this.label5.Location = new System.Drawing.Point(31, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 109;
@@ -170,7 +171,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(117, 246);
+            this.label6.Location = new System.Drawing.Point(14, 179);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 110;
@@ -178,7 +179,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(229, 106);
+            this.button3.Location = new System.Drawing.Point(126, 39);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(64, 23);
             this.button3.TabIndex = 111;
@@ -188,7 +189,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(296, 283);
+            this.button4.Location = new System.Drawing.Point(193, 216);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 112;
@@ -196,12 +197,29 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Form1
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::EscolarMusicApp.Properties.Resources.Cancel;
+            this.button5.Location = new System.Drawing.Point(536, 248);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(89, 62);
+            this.button5.TabIndex = 113;
+            this.button5.Text = "Fechar";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // FrmAluno
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 389);
+            this.ClientSize = new System.Drawing.Size(656, 330);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
@@ -219,7 +237,9 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmAluno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -246,6 +266,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

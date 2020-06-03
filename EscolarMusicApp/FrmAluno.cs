@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EscolarMusicApp
 {
-    public partial class Form1 : Form
+    public partial class FrmAluno : Form
     {
-        public Form1()
+        public FrmAluno()
         {
             InitializeComponent();
         }
@@ -108,6 +108,11 @@ namespace EscolarMusicApp
             aluno.Telefone = txtTelefone.Text;
             aluno.Alterar(aluno);
             MessageBox.Show("Aluno Alterado com sucesso!");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
