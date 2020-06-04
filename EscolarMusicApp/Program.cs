@@ -8,6 +8,7 @@ namespace EscolarMusicApp
 {
     static class Program
     {
+        public static Usuario usuarioLogado; 
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>

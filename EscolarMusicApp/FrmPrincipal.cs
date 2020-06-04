@@ -31,5 +31,12 @@ namespace EscolarMusicApp
             frmProfessor.MdiParent = this;
             frmProfessor.Show();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.ShowDialog();
+            Text = "FrmPrincipal - " + Program.usuarioLogado.Nome;
+        }
     }
 }
