@@ -19,7 +19,7 @@ namespace EscolarMusicApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit();   
         }
 
         private void button1_Click(object sender, EventArgs e)
