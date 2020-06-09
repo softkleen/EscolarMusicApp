@@ -43,5 +43,12 @@ namespace EscolarMusicApp
             }
            
         }
+
+        private void matrículaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMatricula frmMatricula = new FrmMatricula();
+            frmMatricula.MdiParent = this;
+            frmMatricula.Show();
+        }
     }
 }

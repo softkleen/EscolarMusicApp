@@ -41,10 +41,6 @@ namespace EscolarMusicApp
             DataCadastro = dataCadastro;
         }
 
-        public bool EfetuarLogin(Aluno aluno)
-        {
-            return true;
-        }
         public void Inserir(Aluno aluno)
         {
             MySqlCommand cmd = Banco.AbriConexao();
