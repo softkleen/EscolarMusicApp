@@ -95,6 +95,12 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Banco.cs" />
+    <Compile Include="FrmCadastros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastros.Designer.cs">
+      <DependentUpon>FrmCadastros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Curso.cs" />
     <Compile Include="FrmAluno.cs">
       <SubType>Form</SubType>
@@ -134,6 +140,9 @@
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="FrmAluno.resx">
       <DependentUpon>FrmAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastros.resx">
+      <DependentUpon>FrmCadastros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

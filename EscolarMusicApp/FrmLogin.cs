@@ -28,6 +28,8 @@ namespace EscolarMusicApp
             if (usuario.EfetuarLogin(usuario))
             {
                 this.Close();
+                //FrmPrincipal frmPrincipal = new FrmPrincipal();
+                //frmPrincipal.Show();
                 Program.usuarioLogado = usuario;
             }
             else 

@@ -35,11 +35,14 @@ namespace EscolarMusicApp
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             FrmLogin frmLogin = new FrmLogin();
-            
             frmLogin.ShowDialog();
             if (Program.usuarioLogado!=null)
             {
                 Text = "FrmPrincipal - " + Program.usuarioLogado.Nome;
+            }
+            else
+            {
+                Application.Exit();
             }
            
         }

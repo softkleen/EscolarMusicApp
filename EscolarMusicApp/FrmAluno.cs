@@ -22,7 +22,8 @@ namespace EscolarMusicApp
             string sexo = cmbSexo.Text;
             sexo = sexo.Substring(0, 1);
             Aluno aluno = new Aluno(
-                txtNome.Text,txtCpf.Text,sexo,txtEmail.Text,txtTelefone.Text
+                txtNome.Text,txtCpf.Text,sexo,txtEmail.Text,
+                txtTelefone.Text
                 );
             aluno.Inserir(aluno);
             MessageBox.Show("Aluno inserido com sucesso!");

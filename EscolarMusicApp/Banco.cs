@@ -10,8 +10,7 @@ namespace EscolarMusicApp
     public static class Banco
     {
 
-        public static string StrCon =
-            @"server=;user id=;database=;password=";
+        public static string StrCon ="";
         public static MySqlCommand AbriConexao()
         {
             MySqlCommand cmd = new MySqlCommand();

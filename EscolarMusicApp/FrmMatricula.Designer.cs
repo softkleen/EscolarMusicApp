@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMatricula = new System.Windows.Forms.DataGridView();
             this.cmbAluno = new System.Windows.Forms.ComboBox();
             this.cmbCurso = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,16 +36,31 @@
             this.btnMatricular = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMatricula)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvMatricula
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 116);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvMatricula.AllowUserToAddRows = false;
+            this.dgvMatricula.AllowUserToDeleteRows = false;
+            this.dgvMatricula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMatricula.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dgvMatricula.Location = new System.Drawing.Point(18, 116);
+            this.dgvMatricula.Name = "dgvMatricula";
+            this.dgvMatricula.ReadOnly = true;
+            this.dgvMatricula.RowHeadersVisible = false;
+            this.dgvMatricula.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMatricula.Size = new System.Drawing.Size(545, 250);
+            this.dgvMatricula.StandardTab = true;
+            this.dgvMatricula.TabIndex = 0;
             // 
             // cmbAluno
             // 
@@ -98,7 +113,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::EscolarMusicApp.Properties.Resources.Cancel;
-            this.button5.Location = new System.Drawing.Point(472, 282);
+            this.button5.Location = new System.Drawing.Point(474, 372);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(89, 62);
             this.button5.TabIndex = 114;
@@ -114,11 +129,43 @@
             this.textBox1.Size = new System.Drawing.Size(406, 20);
             this.textBox1.TabIndex = 115;
             // 
+            // Column1
+            // 
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.Frozen = true;
+            this.Column2.HeaderText = "Aluno";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.Frozen = true;
+            this.Column3.HeaderText = "Curso";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 200;
+            // 
+            // Column4
+            // 
+            this.Column4.Frozen = true;
+            this.Column4.HeaderText = "Data";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 95;
+            // 
             // FrmMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 356);
+            this.ClientSize = new System.Drawing.Size(588, 435);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnMatricular);
@@ -126,12 +173,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCurso);
             this.Controls.Add(this.cmbAluno);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMatricula);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMatricula";
             this.Text = "FrmMatricula";
             this.Load += new System.EventHandler(this.FrmMatricula_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMatricula)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,7 +186,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMatricula;
         private System.Windows.Forms.ComboBox cmbAluno;
         private System.Windows.Forms.ComboBox cmbCurso;
         private System.Windows.Forms.Label label1;
@@ -147,5 +194,9 @@
         private System.Windows.Forms.Button btnMatricular;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

@@ -48,5 +48,11 @@ namespace EscolarMusicApp
             cmd.CommandText = "select @@identity";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
         }
+        public MySqlDataReader ListarAtivas()
+        {
+            var cmd = Banco.AbriConexao();
+            cmd.CommandText = "select id_matricula as ID, nome_aluno as Aluno, nome_curso as Curso, data_matricula from vw_matricula where situacao = 'A'";
+            return cmd.ExecuteReader();
+        }
     }
 }
