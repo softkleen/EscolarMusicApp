@@ -20,7 +20,7 @@ namespace EscolarMusicApp
         private void button1_Click(object sender, EventArgs e)
         {
             string sexo = cmbSexo.Text;
-            sexo = sexo.Substring(0, 1);
+            sexo = sexo.Substring(0, 1); //urtutyu
             Aluno aluno = new Aluno(
                 txtNome.Text,txtCpf.Text,sexo,txtEmail.Text,
                 txtTelefone.Text
